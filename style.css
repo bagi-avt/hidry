@@ -1,0 +1,236 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --light-color:#E5E5E5;
+    --yellow-color:#FBBA3C;
+    --dark-yellow-color:#FF9702;
+    --light-yellow-color:#FCD17D;
+    --silver-color:#F2F2F2;
+    --dark-silver-color:#C4C4C4;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+button,
+button:active,
+button:focus,
+input,
+input:active,
+input:focus{
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    background-color: var(--yellow-color);
+    height: 45px;
+}
+button:hover{
+    background-color: var(--light-yellow-color);
+}
+button:active{
+    background-color: var(--dark-yellow-color);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 0 40px;
+}
+.mobile-header {
+    display: none;
+}
+.logo svg{
+    width: 88px;
+    height: 72px;
+}
+.catalog{
+    width: 148px;
+}
+.catalog > svg{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.exit-bold {
+    display: none;
+}
+/* Search*/
+.search {
+    flex: 1;
+    margin: 0 33px;
+}
+.search > label {
+    position: relative;
+    width: 100%;
+}
+.search svg,
+.placeholder,
+.placeholder-table-version {
+    position: absolute;
+    top: 53%;
+    left:0;
+    transform: translateY(-50%);
+}
+.search svg{
+    width: 45px;
+    height: 45px;
+    padding-left: 14px;
+    padding-top: 14px;
+    border-radius: 4px;
+    opacity: 0.2;
+}
+.placeholder,
+.placeholder-table-version {
+    color: #000000;
+    opacity: 0.2;
+    pointer-events: none;
+    left: 40px;
+    width:100%;
+    margin-left: 8px;
+}
+.label-search  input:valid + .icon-search + .placeholder,
+.label-search  input:valid + .icon-search + .placeholder + .placeholder-table-version {
+    display: none;
+}
+
+#input-search{
+    padding-left: 48px;
+    height: 45px;
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid var(--yellow-color);
+    width: calc(100% - 111px);
+}
+.button-search{
+    position: absolute;
+    margin-left: -10px;
+    width: 111px;
+}
+.placeholder-table-version {
+    display: none;
+}
+/*search end*/
+nav {
+    display: flex;
+    min-width: 362px;
+}
+nav > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+nav > a > svg{
+    width: 32px;
+    height: 32px;
+}
+.button-basket{
+    min-width: 85px;
+}
+
+@media (max-width: 1023px) {
+    header {
+        margin: 0 20px;
+    }
+    .logo svg{
+        width: 52px;
+        height: 43px;
+        margin: 0 10px;
+    }
+    .catalog {
+        width: 124px;
+    }
+    .placeholder {
+        display: none;
+    }
+    .placeholder-table-version{
+        display: block;
+    }
+    .label-search  input:valid + .icon-search {
+        background-color: var(--yellow-color);
+        opacity: 1;
+    }
+    .search {
+        margin: 0 0 0 8px ;
+    }
+    .button-search {
+        display: none;
+    }
+    #input-search {
+        width: 100%;
+    }
+    nav {
+        min-width: 280px;
+    }
+    .mobile-header {
+        display: none;
+    }
+}
+@media (max-width: 639px) {
+    .catalog {
+        width: 56px;
+    }
+    .catalog svg {
+        margin-right: 0;
+    }
+    .catalog span {
+        display: none;
+    }
+    .search {
+        margin: 0 0 0 14px;
+    }
+    nav {
+        display: none;
+    }
+    /*temp*/
+    .label-search  input:valid + .icon-search {
+        background-color: var(--yellow-color);
+        opacity: 1;
+    }
+    div>nav{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 160px);
+    }
+    .mobile-header{
+        margin: 0 20px;
+        overflow: hidden;
+        display: block;
+        align-items: center;
+        height: calc(100vh - 80px);
+    }
+    .mobile-header .search{
+        margin: 0 14px 0 0 ;
+    }
+    #input-search2{
+        padding-left: 48px;
+        height: 45px;
+        flex: 1;
+        background-color: #ffffff;
+        border: 1px solid var(--yellow-color);
+        width: 100%;
+    }
+    .mobile-header .catalog {
+        order: 3;
+    }
+    .exit-bold {
+        display: initial;
+    }
+    .catalog .three-line {
+        display: none;
+    }
+    /*temp end*/
+
+}
