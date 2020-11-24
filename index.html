@@ -6,11 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
     <style>
-        body{
-            background-color: red;
-        }
-        a {
+
+        .update {
             display: none;
             display: -ms-flexbox;
         }
@@ -19,7 +18,7 @@
             justify-content: space-evenly;
         }
         li{
-            flex: 1;
+            /*flex: 1;*/
             list-style-type: none;
             text-align: center;
             width: 50px;
@@ -35,9 +34,13 @@
     </style>
 </head>
 <body>
-<a>
-    Обновись
-</a>
+<div class="uk-alert-primary" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+</div>
+    <a class="update">
+        Обновись
+    </a>
     <ul>
         <li><div>1</div> </li>
         <li><div>1</div> </li>
@@ -50,5 +53,53 @@
         <li><div>1</div> </li>
         <li><div>1</div> </li>
     </ul>
+<table class="uk-table">
+    <thead>
+    <tr>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Отчество</th>
+        <th>Дата рождения</th>
+        <th>Пол</th>
+        <th>Страна</th>
+        <th>Паспорт</th>
+        <th>Телефон</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Иванов</td>
+        <td>Иван</td>
+        <td>Иванович</td>
+        <td>18.08.1995</td>
+        <td>Мужской</td>
+        <td>Россия</td>
+        <td>589047</td>
+        <td>12345678</td>
+    </tr>
+    <tr>
+        <td>Джонн</td>
+        <td>Смитт</td>
+        <td>Олегович</td>
+        <td>18.08.1980</td>
+        <td>Мужской</td>
+        <td>Англия</td>
+        <td>789047</td>
+        <td>81324567</td>
+    </tr>
+    <tr>
+        <td>Ковалева</td>
+        <td>Екатерина</td>
+        <td>Дмитриевна</td>
+        <td>18.08.19680</td>
+        <td>Женский</td>
+        <td>Казахстан</td>
+        <td>289047</td>
+        <td>12357458</td>
+    </tr>
+    </tbody>
+</table>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>
