@@ -6,241 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: red;
+        }
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+        }
+        li{
+            flex: 1;
+            list-style-type: none;
+            text-align: center;
+            width: 50px;
+            height: 20px;
+        }
+        li div{
+            width: 50px;
+            height: 20px;
+            background-color: green;
+            margin: 0 auto;
 
+        }
+    </style>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <a href="#">
-            <svg class="icon" viewbox="0 0 108 78"  preserveAspectRatio="none">
-                <use xlink:href="img/icons.svg#logo"></use>
-            </svg>
-        </a>
-    </div>
-    <button class="catalog">
-        <svg class="icon">
-            <use xlink:href="img/icons.svg#three-line"></use>
-        </svg>
-        <span>Каталог</span>
-    </button>
-    <div class="search">
-        <label for="input-search" class="label-search">
-            <input name="search" id="input-search" type="text" required>
-            <svg class="icon icon-search" >
-                <use xlink:href="img/icons.svg#search"></use>
-            </svg>
-            <span class="placeholder">Хочу найти</span>
-            <span class="placeholder-table-version">Поиск</span>
-        </label>
-        <button class="button-search">
-            <span>Найти</span>
-        </button>
-    </div>
-    <nav>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#bonus"></use>
-            </svg>
-            <span>Бонусы</span>
-        </a>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#box"></use>
-            </svg>
-            <span>Заказы</span>
-        </a>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#award"></use>
-            </svg>
-            <span>Заказы</span>
-        </a>
-        <a href="#" class="button-basket">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#basket"></use>
-            </svg>
-            <span>Карзина (5)</span>
-        </a>
-    </nav>
-</header>
-<div class="mobile-header"  >
-    <div style="display: flex">
-        <div class="logo">
-            <a href="#">
-                <svg class="icon" viewbox="0 0 108 78"  preserveAspectRatio="none">
-                    <use xlink:href="img/icons.svg#logo"></use>
-                </svg>
-            </a>
-        </div>
-        <button class="catalog">
-            <svg class="icon three-line">
-                <use xlink:href="img/icons.svg#three-line"></use>
-            </svg>
-            <svg class="icon exit-bold">
-                <use xlink:href="img/icons.svg#exit-bold"></use>
-            </svg>
-            <span>Каталог</span>
-        </button>
-        <div class="search">
-            <label for="input-search" class="label-search">
-                <svg class="icon" >
-                    <use xlink:href="img/icons.svg#search"></use>
-                </svg>
-                <input name="search" id="input-search2" type="text" required>
-                <span class="placeholder">Хочу найти</span>
-                <span class="placeholder-table-version">Поиск</span>
-                <button class="button-search">
-                    <span>Найти</span>
-                </button>
-            </label>
-        </div>
-    </div>
-    <nav>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#bonus"></use>
-            </svg>
-            <span>Бонусы</span>
-        </a>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#box"></use>
-            </svg>
-            <span>Заказы</span>
-        </a>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#award"></use>
-            </svg>
-            <span>Заказы</span>
-        </a>
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="img/icons.svg#basket"></use>
-            </svg>
-            <span>Карзина (5)</span>
-        </a>
-    </nav>
+<!--[if !IE]>-->
+<div>
+    Обновись
 </div>
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#logo"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #logo-->
-<!--        </span>-->
-<!--    </div>-->
-
-
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#bonus"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #bonus-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#box"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #box-->
-<!--        </span>-->
-<!--        -->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#award"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #award-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#basket"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #basket-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#arrow-top"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #arrow-top-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--                <use xlink:href="img/icons.svg#arrow-left"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #arrow-left-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--                <use xlink:href="img/icons.svg#three-line"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #three-line-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#delete"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #delete-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#search"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #search-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#filter"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #filter-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#exit"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #exit-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#exit-bold"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #exit-bold-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="icon-item">-->
-<!--        <svg class="icon" width="100" height="50">-->
-<!--            <use xlink:href="img/icons.svg#check-mark"></use>-->
-<!--        </svg>-->
-<!--        <span>-->
-<!--            #check-mark-->
-<!--        </span>-->
-<!--    </div>-->
-<!--    <div class="component-item">-->
-<!--        <button class="add-to-basket">-->
-<!--            В карзину-->
-<!--        </button>-->
-<!--    </div>-->
+<!--<![endif]-->
+    <ul>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+        <li><div>1</div> </li>
+    </ul>
 </body>
 </html>
